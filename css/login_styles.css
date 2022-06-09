@@ -31,3 +31,60 @@ header {
   background-color: green;
 }
 
+@keyframes switchModeThemeAnim {
+  0% {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(69, 69, 70));
+    color: white;
+  }
+  50% {
+    background: linear-gradient(to right, rgb(69, 69, 70), rgb(108, 108, 109));
+    color: white;
+  }
+  75% {
+    background: linear-gradient(
+      to right,
+      rgb(108, 108, 109),
+      rgb(182, 182, 187)
+    );
+    color: white;
+  }
+  100% {
+    background: linear-gradient(
+      to right,
+      rgb(182, 182, 187),
+      rgb(233, 241, 159)
+    );
+    color: black;
+  }
+}
+.swichMode {
+  width: 120px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(26, 36, 33);
+  color: white;
+  animation: switchModeThemeAnim 5s infinite alternate;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 15px;
+}
+
+.hr {
+  width: 5px;
+  height: 1px;
+  display: inline;
+}
+
+.languagues {
+  width: 100px;
+  height: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
+}
